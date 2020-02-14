@@ -3,6 +3,11 @@ Just a template using docker container... setup for laravel 🐳
 
 ...under construction 🚧
 
+## PORTS
+- nginx: 8080
+- php:   9091
+- MySQL: 4306
+
 ## Starting Docker
 ```bash
 docker-compose build
@@ -12,4 +17,18 @@ docker-compose build
 docker-compose up
 ```
 
-## http://localhost:8080/
+## Laravel
+Migrate
+```bash
+ $ docker-compose exec php php /var/www/artisan migrate
+```
+
+Enter to laravel bash
+```bash
+ $ docker-compose exec php php /var/www/artisan 
+```
+
+
+## Issues ⚠
+### _check Internet connection and firewall_
+[youtube tutorial](https://www.youtube.com/watch?v=TARiQdUf3S0)
