@@ -12,7 +12,7 @@ services:
       # TODO: change port
       - "8080:80"
     volumes: 
-      - ./app:/var/www
+      - ./app:/var/www/html/
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
     depends_on: 
       - php
@@ -41,9 +41,8 @@ services:
   php:
     image: php:7.2-fpm-alpine
     container_name: php
-    container_name: php
     volumes: 
-      - ./app:/var/www
+      - ./app:/var/www/html
     ports: 
       - "9091:9000"
     networks: 
