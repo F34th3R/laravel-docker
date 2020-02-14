@@ -20,12 +20,12 @@ docker-compose up
 ## Laravel
 Migrate
 ```bash
- $ docker-compose exec php php /var/www/artisan migrate
+ $ docker-compose exec php php /var/www/html/artisan migrate
 ```
 
 Enter to laravel bash
 ```bash
- $ docker-compose exec php php /var/www/artisan 
+ $ docker-compose exec php php /var/www/html/artisan 
 ```
 
 
