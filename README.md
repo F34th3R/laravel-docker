@@ -17,14 +17,15 @@ docker-compose build
 docker-compose up
 ```
 
-## Laravel 
-install dependence
-```bash
-$ cd ./app/ && composer i
-```
-
+## Laravel
+Migrate
 ```bash
  $ docker-compose exec php php /var/www/artisan migrate
+```
+
+Enter to laravel bash
+```bash
+ $ docker-compose exec php php /var/www/artisan 
 ```
 
 
